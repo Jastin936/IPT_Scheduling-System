@@ -23,10 +23,60 @@ Make sure you have Python 3.x installed on your system.
 
 ### Installation & Setup
 
-1. **Clone the repository:**
+🛠️ Step 1: Backend Setup (Django REST Framework)
+
+1. **Initialize Environment and Install Dependencies:**
    ```bash
    git clone [https://github.com/Jastin936/IPT_Scheduling-System.git](https://github.com/Jastin936/IPT_Scheduling-System.git)
    cd IPT_Scheduling-System
+   # Create and activate a python virtual environment
    python -m venv venv
+   # activate a virtual environment
    venv\Scripts\activate
+   # Install Django, Django REST Framework, JWT Auth, and CORS headers
    pip install django djangorestframework djangorestframework-simplejwt django-cors-headers
+
+2. **Create the Django Project and App**
+     ```bash
+     # Create the main project configuration named 'backend'
+     django-admin startproject backend .
+     # Create an app specifically for your scheduling logic
+     python manage.py startapp events
+
+💻 Step 2: Frontend Setup (React + Vite)
+
+1. **Initialize Vite and Install Dependencies**
+     ```bash
+     # Create the React Vite project
+     npm create vite@latest frontend -- --template react
+
+     # Navigate into the frontend folder
+     cd frontend
+
+     # Install the standard package dependencies
+     npm install
+
+     # Install Axios for API requests and React Router for page navigation
+     npm install axios react-router-dom
+
+2. **Frontend Folder Structure**
+     ```plaintext
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── ProtectedRoute.jsx
+│
+├── context/
+│   └── AuthContext.jsx
+│
+├── pages/
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── Dashboard.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+└── main.jsx
+```
