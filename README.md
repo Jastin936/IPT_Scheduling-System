@@ -110,11 +110,11 @@ Make sure you have Python 3.x installed on your system.
 
 ## 🏗️ Backend Endpoint Architecture Blueprint
 
-         | HTTP Method | Endpoint | Purpose |
-         |---|---|---|
-         | POST | `/api/register/` | Creates a new user profile |
-         | POST | `/api/token/` | Exchanges password for JWT tokens |
-         | POST | `/api/token/refresh/` | Refreshes expired access tokens |
-         | GET / POST | `/api/events/` | Lists user's events / Creates a new event |
-         | GET / PUT / DELETE | `/api/events/<id>/` | Reads, updates, or deletes a specific event |
-         ```
+    | HTTP Method | Endpoint | Purpose |
+    |---|---|---|
+    | POST | `/api/register/` | Creates a new user profile |
+    | POST | `/api/token/` | Exchanges password for JWT tokens |
+    | POST | `/api/token/refresh/` | Refreshes expired access tokens |
+    | GET / POST | `/api/events/` | Lists user's events / Creates a new event |
+    | GET / PUT / DELETE | `/api/events/<id>/` | Reads, updates, or deletes a specific event |
+    ```
