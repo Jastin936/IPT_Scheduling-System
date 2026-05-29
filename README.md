@@ -27,3 +27,6 @@ Make sure you have Python 3.x installed on your system.
    ```bash
    git clone [https://github.com/Jastin936/IPT_Scheduling-System.git](https://github.com/Jastin936/IPT_Scheduling-System.git)
    cd IPT_Scheduling-System
+   python -m venv venv
+   venv\Scripts\activate
+   pip install django djangorestframework djangorestframework-simplejwt django-cors-headers
