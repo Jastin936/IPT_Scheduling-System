@@ -109,7 +109,7 @@ Make sure you have Python 3.x installed on your system.
 **Your user interface will be live at* `http://localhost:5173/`
 
 ## ⚙️ Backend Endpoint Architecture Blueprint
-    ```plaintext
+     ```plaintext
     HTTP Method       API Endpoint                Purpose
     POST              /api/register/              Creates a new user profile
     POST              /api/token/                 Exchanges password for JWT tokens
