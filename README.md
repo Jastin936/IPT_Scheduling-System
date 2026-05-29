@@ -88,22 +88,22 @@ Make sure you have Python 3.x installed on your system.
 
 ## 🚀 Step 3: Running Your Project
 
-**Start the Django Backend**
-    ```bash
-    # Create migration files based on changes in models.py
-    python manage.py makemigrations
+1. **Start the Django Backend**
+     ```bash
+     # Create migration files based on changes in models.py
+     python manage.py makemigrations
 
-    # Apply migrations and update the database schema
-    python manage.py migrate
+     # Apply migrations and update the database schema
+     python manage.py migrate
 
-    # Start the Django development server
-    python manage.py runserver
+     # Start the Django development server
+     python manage.py runserver
 
 **Your API will be live at* `http://127.0.0.1:8000/`
 
-**Start the React Frontend**
-    ```bash
-    # In your frontend directory terminal
-    npm run dev
+2. **Start the React Frontend**
+     ```bash
+     # In your frontend directory terminal
+     npm run dev
 
 **Your user interface will be live at* `http://localhost:5173/`
