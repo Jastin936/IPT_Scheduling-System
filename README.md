@@ -23,16 +23,20 @@ Make sure you have Python 3.x installed on your system.
 
 ### Installation & Setup
 
-🛠️ Step 1: Backend Setup (Django REST Framework)
+## 🛠️ Step 1: Backend Setup (Django REST Framework)
 
 1. **Initialize Environment and Install Dependencies:**
    ```bash
+   
    git clone [https://github.com/Jastin936/IPT_Scheduling-System.git](https://github.com/Jastin936/IPT_Scheduling-System.git)
    cd IPT_Scheduling-System
+   
    # Create and activate a python virtual environment
    python -m venv venv
+   
    # activate a virtual environment
    venv\Scripts\activate
+   
    # Install Django, Django REST Framework, JWT Auth, and CORS headers
    pip install django djangorestframework djangorestframework-simplejwt django-cors-headers
 
@@ -40,10 +44,11 @@ Make sure you have Python 3.x installed on your system.
      ```bash
      # Create the main project configuration named 'backend'
      django-admin startproject backend .
+     
      # Create an app specifically for your scheduling logic
      python manage.py startapp events
 
-💻 Step 2: Frontend Setup (React + Vite)
+## 💻 Step 2: Frontend Setup (React + Vite)
 
 1. **Initialize Vite and Install Dependencies**
      ```bash
@@ -61,22 +66,44 @@ Make sure you have Python 3.x installed on your system.
 
 2. **Frontend Folder Structure**
      ```plaintext
-src/
-├── components/
-│   ├── Navbar.jsx
-│   └── ProtectedRoute.jsx
-│
-├── context/
-│   └── AuthContext.jsx
-│
-├── pages/
-│   ├── Login.jsx
-│   ├── Register.jsx
-│   └── Dashboard.jsx
-│
-├── services/
-│   └── api.js
-│
-├── App.jsx
-└── main.jsx
-```
+     src/
+     ├── components/
+     │   ├── Navbar.jsx
+     │   └── ProtectedRoute.jsx
+     │
+     ├── context/
+     │   └── AuthContext.jsx
+     │
+     ├── pages/
+     │   ├── Login.jsx
+     │   ├── Register.jsx
+     │   └── Dashboard.jsx
+     │
+     ├── services/
+     │   └── api.js
+     │
+     ├── App.jsx
+     └── main.jsx
+    ```
+
+## 🚀 Step 3: Running Your Project
+
+**Start the Django Backend**
+    ```bash
+    # Create migration files based on changes in models.py
+    python manage.py makemigrations
+
+    # Apply migrations and update the database schema
+    python manage.py migrate
+
+    # Start the Django development server
+    python manage.py runserver
+
+**Your API will be live at* `http://127.0.0.1:8000/`
+
+**Start the React Frontend**
+    ```bash
+    # In your frontend directory terminal
+    npm run dev
+
+**Your user interface will be live at* `http://localhost:5173/`
